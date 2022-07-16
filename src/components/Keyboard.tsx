@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Key from './Key';
-import layout from "../assets/basicLayout.json";
 import layout2 from "../assets/basicLayoutV2.json";
 
 interface KeyboardLayout {
@@ -39,7 +38,7 @@ export default function Keyboard({ formulachangeHandler }: KeyboardProp) {
 
         window.addEventListener('keydown', onKeyboardPressed, false);
         return () => window.removeEventListener('keydown', onKeyboardPressed, false);
-    }, [formulachangeHandler]);
+    }, [formulachangeHandler, keyboardLayout.keys]);
 
 
     return (
