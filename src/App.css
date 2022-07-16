@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.calculadora {
+  height: 490px;
+  width: 400px;
+  background-color: aquamarine;
+  padding: 16px;
+  border-radius: 10px;
+  border-color: black;
+  border: 2px solid;
+  font-size: 20px;
+  padding: 1rem;
+  margin-top: 100px;
+  box-shadow: 7px 7px 3px rgba(6, 10, 5, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border-color: black;
+  border: 2px solid;
+  font-size: 30px;
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.key {
+  height: 80px;
+  border-radius: 10px;
+  border-color: black;
+  font-size: 28px;
+  color: white;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.number {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.operator {
+  background-color: gray;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dot {
+  background-color: darkblue;
+}
+
+.enter {
+  background-color: red;
+
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+}
+
+.keyboard.columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keyboard.columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.key.column-span-1 {
+  grid-column: span 1;
+}
+
+.key.column-span-2 {
+  grid-column: span 2;
+}
+
+.key.row-span-1 {
+  grid-row: span 1;
+}
+
+.key.row-span-2 {
+  grid-row: span 2;
+}
+
+button,
+input {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 24px;
+}
+
+.operator {
+  font-size: 32px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.app-footer {
+  margin-bottom: 5px;
+  text-align: center;
 }
