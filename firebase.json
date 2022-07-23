@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "calculator-dbl",
+    "site": "todolist-dbl",
     "public": "build",
     "ignore": [
       "firebase.json",
